@@ -116,4 +116,7 @@ Here's a [link to my video result](./project_video.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+My program sometimes fais to detect lane line correctly at the occasion when strong sunshine, shadow of tree on the road,  
+or differenct several color exists on the road.
+
+I tried to change filter threshold conditions and sanity check / smoothing functions but could not complete to find which can cover all the videos (project.mp4, challenge.mp4, harder_challenge.mp4), especially for harder_challenge.mp4. I think it may be necessary to change dynamically the filter and threshold conditions such as the area for perspective transform, color, HLS L channel threshold, and collaborating with other sensors.
